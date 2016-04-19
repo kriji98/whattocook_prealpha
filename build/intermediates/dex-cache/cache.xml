@@ -2,53 +2,67 @@
 <items version="2" >
 
     <item
-        jar="/home/vicky/Programming/whattocook_alpha/whattocook_alpha/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
-        <dex dex="/home/vicky/Programming/whattocook_alpha/whattocook_alpha/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1_3190141538b5b36c8942fa0a4d5ba49b9436751e.jar" />
-    </item>
-    <item
-        jar="/home/vicky/Programming/whattocook_alpha/whattocook_alpha/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
-        <dex dex="/home/vicky/Programming/whattocook_alpha/whattocook_alpha/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.1.1_26b83da7707a867b17830b106a7d2a187f5e1558.jar" />
-    </item>
-    <item
-        jar="/root/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
-        <dex dex="/home/vicky/Programming/whattocook_alpha/whattocook_alpha/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1_b0c91f45b5c2e0241b5a2511dcb2eec0f59fb5f5.jar" />
-    </item>
-    <item
-        jar="/home/vicky/Programming/whattocook_alpha/whattocook_alpha/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
-        <dex dex="/home/vicky/Programming/whattocook_alpha/whattocook_alpha/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.1.1_7cf45b5aace7978d0926a2c7f90c67b4ce56a428.jar" />
-    </item>
-    <item
-        jar="/home/vicky/Programming/whattocook_alpha/whattocook_alpha/app/build/intermediates/exploded-aar/com.android.volley/volley2/unspecified/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="c21ff18e538ad9c56bd7f7c6d1d42b256adec7ce">
-        <dex dex="/home/vicky/Programming/whattocook_alpha/whattocook_alpha/app/build/intermediates/pre-dexed/debug/com.android.volley-volley2-unspecified_22d0b0a230235985b9747a229b198e732795bbda.jar" />
-    </item>
-    <item
-        jar="/home/vicky/Programming/whattocook_alpha/whattocook_alpha/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
+        jar="/home/kristiana/AndroidStudioProjects/whattocook_alpha/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="5c5699834e9722f1c288fea2de82725d078ba127">
-        <dex dex="/home/vicky/Programming/whattocook_alpha/whattocook_alpha/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.1.1_d9a1cc46f60ae0011d998fc116061e8e26d4f35f.jar" />
+        <dex dex="/home/kristiana/AndroidStudioProjects/whattocook_alpha/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.1.1_35501c145164678c41f129cad8a99299e47d1c76.jar" />
     </item>
     <item
-        jar="/home/vicky/Programming/whattocook_alpha/whattocook_alpha/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jar="/home/kristiana/AndroidStudioProjects/whattocook_alpha/app/build/intermediates/exploded-aar/com.android.volley/volley/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3cfdaa869ad2b61339cf5b9401e042b5eb2584f7">
+        <dex dex="/home/kristiana/AndroidStudioProjects/whattocook_alpha/app/build/intermediates/pre-dexed/debug/com.android.volley-volley-unspecified_04de2f2d9015bb6a6e50c033f2133b5b6bddbb8e.jar" />
+    </item>
+    <item
+        jar="/home/kristiana/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/home/kristiana/AndroidStudioProjects/whattocook_alpha/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1_e5e4beba960fc00fbcafe0e1eccd8ad3cf5aa83f.jar" />
+    </item>
+    <item
+        jar="/home/kristiana/AndroidStudioProjects/whattocook_alpha/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/home/kristiana/AndroidStudioProjects/whattocook_alpha/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1_53b10f8f1a81f9a3565951086354e8b0b7c38989.jar" />
+    </item>
+    <item
+        jar="/home/kristiana/AndroidStudioProjects/whattocook_alpha/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="/home/kristiana/AndroidStudioProjects/whattocook_alpha/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.1.1_8dcd2cb67b193b38555bfa7ffaa3a17662644137.jar" />
+    </item>
+    <item
+        jar="/home/kristiana/AndroidStudioProjects/whattocook_alpha/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
-        <dex dex="/home/vicky/Programming/whattocook_alpha/whattocook_alpha/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.1.1_b48cd6eb65d9d32d74ab7e0d8540e07be925a1bf.jar" />
+        <dex dex="/home/kristiana/AndroidStudioProjects/whattocook_alpha/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.1.1_e5a99707204fdbe594d042175b7e7e4af897051a.jar" />
+    </item>
+    <item
+        jar="/home/kristiana/AndroidStudioProjects/whattocook_alpha/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="/home/kristiana/AndroidStudioProjects/whattocook_alpha/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-8.1.0_180b6367678c8ad893d4c3403d83e49ed20bae8c.jar" />
+    </item>
+    <item
+        jar="/home/kristiana/AndroidStudioProjects/whattocook_alpha/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="/home/kristiana/AndroidStudioProjects/whattocook_alpha/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.1.1_6ac94fa8db839436aca551ab9f17cbdd3e10e938.jar" />
+    </item>
+    <item
+        jar="/home/kristiana/AndroidStudioProjects/whattocook_alpha/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="/home/kristiana/AndroidStudioProjects/whattocook_alpha/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-8.1.0_2b32905dfe177c7fc9e50c2521841efd1e03305d.jar" />
     </item>
 
 </items>

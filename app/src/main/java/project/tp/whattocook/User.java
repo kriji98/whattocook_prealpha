@@ -1,15 +1,15 @@
 package project.tp.whattocook;
 
-public class User
-{
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
-    String username, password, email;
+public class User extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_user);
 
-    public User(String username, String password, String email)
-    {
-        this.username = username;
-        this.password = password;
-        this.email = email;
+        Intent intent = getIntent();
     }
-
 }

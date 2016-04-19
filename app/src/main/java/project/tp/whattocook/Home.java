@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 public class Home extends AppCompatActivity
 {
+    public static String TAG = "WhatToCook";
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
