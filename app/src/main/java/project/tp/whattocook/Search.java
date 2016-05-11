@@ -37,13 +37,13 @@ public class Search extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Button listOfRecipes = (Button) findViewById(R.id.search_listOfRecipes_button);
+        /*Button listOfRecipes = (Button) findViewById(R.id.search_listOfRecipes_button);
         listOfRecipes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
     //            Action_SearchToListOfRecipes(view);
             }
-        });
+        });*/
 
         searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
 
