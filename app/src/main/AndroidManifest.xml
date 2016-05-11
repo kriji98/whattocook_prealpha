@@ -3,7 +3,7 @@
     package="project.tp.whattocook">
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
@@ -14,8 +14,10 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <meta-data android:name = "android.app.searchable"
-            android:resource = "@xml/searchable"/>   <!--here I add meta-data (09.05.2016)-->
+        <meta-data
+            android:name="android.app.searchable"
+            android:resource="@xml/searchable" />
+        <!-- here I add meta-data (09.05.2016) -->
         <activity
             android:name=".Launcher"
             android:label="@string/app_name"
@@ -30,9 +32,7 @@
         <activity
             android:name=".Home"
             android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Signup"
             android:label="@string/title_activity_signup"
@@ -57,8 +57,11 @@
             android:name=".Search"
             android:label="@string/title_activity_search"
             android:theme="@style/AppTheme.NoActionBar" />
-            <meta-data android:name = "android.app.searchable"
-                android:resource = "@xml/searchable"/>     <!--here I add meta data(09.05.2016)-->
+
+        <meta-data
+            android:name="android.app.searchable"
+            android:resource="@xml/searchable" />
+        <!-- here I add meta data(09.05.2016) -->
         <activity
             android:name=".RandomRecipe"
             android:label="@string/title_activity_random_recipe"
@@ -73,11 +76,17 @@
         <activity
             android:name=".ForgottenPassword"
             android:label="@string/title_activity_forgotten_password"
-            android:theme="@style/AppTheme.NoActionBar"></activity> <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
-     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+      ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".RecipesList" />
+        <activity android:name=".AddRecipes"></activity>
     </application>
 
 </manifest>
