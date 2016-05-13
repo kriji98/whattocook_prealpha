@@ -12,13 +12,6 @@
     tools:context="project.tp.whattocook.RecipeOfTheDay"
     tools:showIn="@layout/activity_recipe_of_the_day">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:src="@drawable/fruitsalad"
-        android:layout_centerHorizontal="true" />
-
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
@@ -61,7 +54,18 @@
         android:text="Плодова салата"
         android:textSize="25sp"
         android:id="@+id/rotd_recipe_title"
-        android:layout_below="@+id/imageView"
+        android:layout_above="@+id/rotd_recipe_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="99dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Рецепта на деня"
+        android:textSize="40sp"
+        android:id="@+id/textView5"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

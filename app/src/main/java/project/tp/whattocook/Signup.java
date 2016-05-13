@@ -17,7 +17,7 @@ import org.json.JSONObject;
 
 public class Signup extends AppCompatActivity {
 
-    @Override
+   // @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
@@ -28,8 +28,8 @@ public class Signup extends AppCompatActivity {
         final EditText etEmail = (EditText) findViewById(R.id.email_signUp);
         final EditText etUsername = (EditText) findViewById(R.id.username_signUp);
         final EditText etPassword = (EditText) findViewById(R.id.pass_signUp);
+    //    final EditText etRePassword = (EditText) findViewById(R.id.reenter_pass_signUp);
         final Button signUp = (Button) findViewById(R.id.signup_signup_button);
-
 
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,6 +37,15 @@ public class Signup extends AppCompatActivity {
                 final String username = etUsername.getText().toString();
                 final String email = etEmail.getText().toString();
                 final String password = etPassword.getText().toString();
+    //            final String rePassword = etRePassword.getText().toString();
+
+    /*            if (rePassword != password) {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(Signup.this);
+                    builder.setMessage("Паролите не съвпадат")
+                            .setNegativeButton("Опитай пак", null)
+                            .create()
+                            .show();
+                }*/
 
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                         @Override
