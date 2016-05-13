@@ -33,7 +33,7 @@ public class Login extends AppCompatActivity
 
         bLogin.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(final View view) {
                 final String username = etUsername.getText().toString();
                 final String password = etPassword.getText().toString();
 
@@ -52,10 +52,11 @@ public class Login extends AppCompatActivity
                                 intent.putExtra("password", password);
                                 intent.putExtra("username", username);
                                 Login.this.startActivity(intent);
+                                /*Action_Forward(view);*/
                             } else {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(Login.this);
-                                builder.setMessage("Login Failed")
-                                        .setNegativeButton("Retry", null)
+                                builder.setMessage("Неуспешно влизане")
+                                        .setNegativeButton("Опитай пак", null)
                                         .create()
                                         .show();
                             }

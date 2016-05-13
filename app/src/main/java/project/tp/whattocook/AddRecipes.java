@@ -10,7 +10,8 @@ public class AddRecipes extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_add_recipes);
         Button addPhoto = (Button) findViewById(R.id.button_add_recipes_photo);
 
         addPhoto.setOnClickListener(new View.OnClickListener() {
@@ -18,7 +19,7 @@ public class AddRecipes extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent();
-                intent.setType("image/*");
+                intent.setType("image");
                 intent.setAction(Intent.ACTION_GET_CONTENT);
                 // finish the uploading of a picture
             }

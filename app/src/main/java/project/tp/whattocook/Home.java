@@ -28,7 +28,7 @@ public class Home extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-                Toast.makeText(Home.this, "Email: whattocook@gmail.com", Toast.LENGTH_LONG).show();
+                Toast.makeText(Home.this, "Email: whattocookAlpha@gmail.com", Toast.LENGTH_LONG).show();
                 //        .setAction("Action", null).show();
             }
 

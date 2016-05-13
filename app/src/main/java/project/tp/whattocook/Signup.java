@@ -51,8 +51,8 @@ public class Signup extends AppCompatActivity {
                                     Signup.this.startActivity(intent);
                                 } else {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Signup.this);
-                                    builder.setMessage("Register Failed")
-                                            .setNegativeButton("Retry", null)
+                                    builder.setMessage("Неуспешна регистрация")
+                                            .setNegativeButton("Опитай пак", null)
                                             .create()
                                             .show();
                                 }
