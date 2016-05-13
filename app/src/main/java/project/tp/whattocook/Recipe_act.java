@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-public class Recipe extends AppCompatActivity {
+public class Recipe_act extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

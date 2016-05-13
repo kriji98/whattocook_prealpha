@@ -46,7 +46,7 @@
             android:label="@string/title_activity_recipe_of_the_day"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Recipe"
+            android:name=".Recipe_act"
             android:label="@string/title_activity_recipe"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
