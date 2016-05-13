@@ -47,7 +47,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Recipe_act"
-            android:label="@string/title_activity_recipe"
+            android:label="@string/title_activity_recipe_act"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AskRecipeOrIdea"

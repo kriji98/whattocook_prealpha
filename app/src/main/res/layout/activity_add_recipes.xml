@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/add_recipes_title_recipe"
         android:id="@+id/text_time_add_recipes"
-        android:text="Време за приготвяне"
+        android:text="Време за приготвяне (в минути)"
         android:textSize="12sp"
         />
 
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/text_time_add_recipes"
         android:id="@+id/add_recipes_time"
-        />
+        android:layout_alignEnd="@+id/text_title_add_recipes" />
 
     <TextView
         android:layout_width="match_parent"
