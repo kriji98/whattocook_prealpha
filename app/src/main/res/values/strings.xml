@@ -20,7 +20,7 @@
         completions."
     </string>
     <string name="title_activity_recipe_of_the_day">Recipe Of The Day</string>
-    <string name="title_activity_recipe">Recipe</string>
+    <string name="title_activity_recipe_act">Recipe_act</string>
     <string name="title_activity_search">Search</string>
     <string name="title_activity_ask_recipe_or_idea"></string>
     <string name="title_activity_random_recipe">Random Recipe</string>
