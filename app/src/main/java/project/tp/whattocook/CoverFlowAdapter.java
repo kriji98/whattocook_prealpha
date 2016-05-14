@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.TextClock;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -72,12 +73,16 @@ public class CoverFlowAdapter extends BaseAdapter {
                 final Dialog dialog = new Dialog(activity);
                 dialog.setContentView(R.layout.dialog_popularrecipe_info);
                 dialog.setCancelable(true); // dimiss when touching outside
-                dialog.setTitle("PopularRecipe Details");
+                dialog.setTitle(getItem(position).getName());
 
-                TextView text = (TextView) dialog.findViewById(R.id.name);
-                text.setText(getItem(position).getName());
                 ImageView image = (ImageView) dialog.findViewById(R.id.image);
                 image.setImageResource(getItem(position).getImageSource());
+                TextView ingredients = (TextView) dialog.findViewById(R.id.ingredients);
+                ingredients.setText("Съставки: " + getItem(position).getIngredients());
+                TextView time = (TextView) dialog.findViewById(R.id.recipes_time);
+                time.setText("Време: " + getItem(position).getTime() + " минути");
+                TextView preparation = (TextView) dialog.findViewById(R.id.preparation);
+                preparation.setText("Приготвяне: " + getItem(position).getPreparation());
 
                 dialog.show();
             }

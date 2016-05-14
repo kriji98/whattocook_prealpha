@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="child_icon" type="id" />
+    <item name="ingredients" type="id" />
+    <item name="preparation" type="id" />
+    <item name="recipes_time" type="id" />
 </resources>

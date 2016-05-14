@@ -11,7 +11,7 @@ import java.util.List;
 public class Recipe {
     private String title;
     private List<String[]> ingredients;
-    private int time;
+    private String time;
     private String[] preparation;
     private String image;
 
@@ -31,11 +31,11 @@ public class Recipe {
         this.ingredients = ingredients;
     }
 
-    public int getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(int time) {
+    public void setTime(String time) {
         this.time = time;
     }
 
