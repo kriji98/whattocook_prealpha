@@ -42,11 +42,11 @@ public class RecipeOfTheDay extends AppCompatActivity {
 
     private void settingDummyData() {
         PopularRecipes = new ArrayList<>();
-        PopularRecipes.add(new PopularRecipe(R.mipmap.generic_icon, "Assassin Creed 3"));
-        PopularRecipes.add(new PopularRecipe(R.mipmap.generic_icon, "Avatar 3D"));
-        PopularRecipes.add(new PopularRecipe(R.mipmap.generic_icon, "Call Of Duty Black Ops 3"));
-        PopularRecipes.add(new PopularRecipe(R.mipmap.generic_icon, "DotA 2"));
-        PopularRecipes.add(new PopularRecipe(R.mipmap.generic_icon, "Halo 5"));
+        PopularRecipes.add(new PopularRecipe(R.mipmap.generic_icon, "Чийзкейк"));
+        PopularRecipes.add(new PopularRecipe(R.drawable.salata_s_carevica_i_kedrovi_qdki, "Салата с ядки, семена и царевица"));
+        PopularRecipes.add(new PopularRecipe(R.drawable.palachinki, "Палачинки"));
+        PopularRecipes.add(new PopularRecipe(R.drawable.salata_s_kuskus, "Салата с кускус"));
+        PopularRecipes.add(new PopularRecipe(R.drawable.kufteta_ot_kaima_s_oriz, "Кюфтета от кайма с ориз"));
         PopularRecipes.add(new PopularRecipe(R.mipmap.generic_icon, "Left 4 Dead 2"));
         PopularRecipes.add(new PopularRecipe(R.mipmap.generic_icon, "StarCraft"));
         PopularRecipes.add(new PopularRecipe(R.mipmap.generic_icon, "The Witcher 3"));
