@@ -1,48 +1,56 @@
 package project.tp.whattocook;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+import android.util.Log;
+
+import java.util.ArrayList;
+
+import it.moondroid.coverflow.components.ui.containers.FeatureCoverFlow;
 
 public class RecipeOfTheDay extends AppCompatActivity {
+
+    private FeatureCoverFlow coverFlow;
+    private CoverFlowAdapter adapter;
+    private ArrayList<PopularRecipe> PopularRecipes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe_of_the_day);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        coverFlow = (FeatureCoverFlow) findViewById(R.id.coverflow);
 
-        Button recipe = (Button) findViewById(R.id.rotd_recipe_button);
-        recipe.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Action_ROTDtoRecipe(view);
-            }
-        });
-
-        Button askroi = (Button) findViewById(R.id.rotd_askroi_button);
-        askroi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Action_ROTDtoAskRorIdea(view);
-            }
-        });
+        settingDummyData();
+        adapter = new CoverFlowAdapter(this, PopularRecipes);
+        coverFlow.setAdapter(adapter);
+        coverFlow.setOnScrollPositionListener(onScrollListener());
     }
 
-    public void Action_ROTDtoRecipe(View view)
-    {
-        Intent intent = new Intent(getApplicationContext(), Recipe_act.class);
-        startActivity(intent);
+    private FeatureCoverFlow.OnScrollPositionListener onScrollListener() {
+        return new FeatureCoverFlow.OnScrollPositionListener() {
+            @Override
+            public void onScrolledToPosition(int position) {
+                Log.v("MainActiivty", "position: " + position);
+            }
+
+            @Override
+            public void onScrolling() {
+                Log.i("MainActivity", "scrolling");
+            }
+        };
     }
 
-    public void Action_ROTDtoAskRorIdea(View view)
-    {
-        Intent intent = new Intent(getApplicationContext(), AskRecipeOrIdea.class);
-        startActivity(intent);
+    private void settingDummyData() {
+        PopularRecipes = new ArrayList<>();
+        PopularRecipes.add(new PopularRecipe(R.mipmap.generic_icon, "Assassin Creed 3"));
+        PopularRecipes.add(new PopularRecipe(R.mipmap.generic_icon, "Avatar 3D"));
+        PopularRecipes.add(new PopularRecipe(R.mipmap.generic_icon, "Call Of Duty Black Ops 3"));
+        PopularRecipes.add(new PopularRecipe(R.mipmap.generic_icon, "DotA 2"));
+        PopularRecipes.add(new PopularRecipe(R.mipmap.generic_icon, "Halo 5"));
+        PopularRecipes.add(new PopularRecipe(R.mipmap.generic_icon, "Left 4 Dead 2"));
+        PopularRecipes.add(new PopularRecipe(R.mipmap.generic_icon, "StarCraft"));
+        PopularRecipes.add(new PopularRecipe(R.mipmap.generic_icon, "The Witcher 3"));
+        PopularRecipes.add(new PopularRecipe(R.mipmap.generic_icon, "Tom raider 3"));
+        PopularRecipes.add(new PopularRecipe(R.mipmap.generic_icon, "Need for Speed Most Wanted"));
     }
 }
