@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/text_title_add_recipes"
         android:text="Заглавие"
-        android:textSize="12sp"
+        android:textSize="15sp"
         />
 
     <EditText
@@ -30,7 +30,7 @@
         android:layout_below="@+id/add_recipes_title_recipe"
         android:id="@+id/text_time_add_recipes"
         android:text="Време за приготвяне (в минути)"
-        android:textSize="12sp"
+        android:textSize="15sp"
         />
 
     <EditText
@@ -46,7 +46,7 @@
         android:layout_below="@+id/add_recipes_time"
         android:id="@+id/text_ingredients_add_recipes"
         android:text="Съставки"
-        android:textSize="12sp"
+        android:textSize="15sp"
         />
 
     <EditText
@@ -59,7 +59,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="12sp"
+        android:textSize="15sp"
         android:layout_below="@+id/add_recipes_ingredients"
         android:id="@+id/text_preparation_add_recipes"
         android:text="Начин на приготвяне"
@@ -103,5 +103,12 @@
         android:textAlignment="center"
         android:layout_alignParentBottom="true"
         android:layout_toEndOf="@+id/button_add_recipes_photo" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivAdd_Recipes"
+        android:layout_above="@+id/button_add_recipes_ready"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
