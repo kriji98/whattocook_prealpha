@@ -42,15 +42,15 @@ public class RecipeOfTheDay extends AppCompatActivity {
 
     private void settingDummyData() {
         PopularRecipes = new ArrayList<>();
-        PopularRecipes.add(new PopularRecipe(R.mipmap.generic_icon, "Чийзкейк"));
+        PopularRecipes.add(new PopularRecipe(R.drawable.limonov_chiizkeik, "Лимонов чийзкейк"));
         PopularRecipes.add(new PopularRecipe(R.drawable.salata_s_carevica_i_kedrovi_qdki, "Салата с ядки, семена и царевица"));
         PopularRecipes.add(new PopularRecipe(R.drawable.palachinki, "Палачинки"));
         PopularRecipes.add(new PopularRecipe(R.drawable.salata_s_kuskus, "Салата с кускус"));
         PopularRecipes.add(new PopularRecipe(R.drawable.kufteta_ot_kaima_s_oriz, "Кюфтета от кайма с ориз"));
-        PopularRecipes.add(new PopularRecipe(R.mipmap.generic_icon, "Left 4 Dead 2"));
-        PopularRecipes.add(new PopularRecipe(R.mipmap.generic_icon, "StarCraft"));
-        PopularRecipes.add(new PopularRecipe(R.mipmap.generic_icon, "The Witcher 3"));
-        PopularRecipes.add(new PopularRecipe(R.mipmap.generic_icon, "Tom raider 3"));
-        PopularRecipes.add(new PopularRecipe(R.mipmap.generic_icon, "Need for Speed Most Wanted"));
+        PopularRecipes.add(new PopularRecipe(R.drawable.bob_s_nadenica, "Боб с наденица ⭐"));
+        PopularRecipes.add(new PopularRecipe(R.drawable.tarator_s_krastavici_i_marulq, "Таратор с краставици и маруля"));
+        PopularRecipes.add(new PopularRecipe(R.drawable.rulo_ot_bekon_i_pileshko_file, "Руло от бекон и пилешко филе"));
+        PopularRecipes.add(new PopularRecipe(R.drawable.vuzdushni_qica_na_ochi, "Въздушни яйца на очи"));
+        PopularRecipes.add(new PopularRecipe(R.drawable.qgodova_supa, "Ягодова супа"));
     }
 }
