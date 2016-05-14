@@ -23,7 +23,7 @@ public class User extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplication(), RecipeOfTheDay.class);
+                Intent intent = new Intent(getApplication(), AskRecipeOrIdea.class);
                 startActivity(intent);
             }
         });

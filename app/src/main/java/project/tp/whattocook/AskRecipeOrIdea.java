@@ -28,13 +28,13 @@ public class AskRecipeOrIdea extends AppCompatActivity {
             }
         });
 
-        Button random = (Button) findViewById(R.id.askrecipeoridea_random_button);
-        random.setOnClickListener(new View.OnClickListener()
+        Button rotd = (Button) findViewById(R.id.askrecipeoridea_rotd_button);
+        rotd.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view)
             {
-                Action_AskRorItoRandomRecipe(view);
+                Action_AskRorItoROTD(view);
             }
         });
     }
@@ -45,9 +45,9 @@ public class AskRecipeOrIdea extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void Action_AskRorItoRandomRecipe(View view)
+    public void Action_AskRorItoROTD(View view)
     {
-        Intent intent = new Intent(getApplicationContext(), RandomRecipe.class);
+        Intent intent = new Intent(getApplicationContext(), RecipeOfTheDay.class);
         startActivity(intent);
     }
 }
