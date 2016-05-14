@@ -28,7 +28,7 @@ public class Signup extends AppCompatActivity {
         final EditText etEmail = (EditText) findViewById(R.id.email_signUp);
         final EditText etUsername = (EditText) findViewById(R.id.username_signUp);
         final EditText etPassword = (EditText) findViewById(R.id.pass_signUp);
-    //    final EditText etRePassword = (EditText) findViewById(R.id.reenter_pass_signUp);
+        final EditText etRePassword = (EditText) findViewById(R.id.reenter_pass);
         final Button signUp = (Button) findViewById(R.id.signup_signup_button);
 
         signUp.setOnClickListener(new View.OnClickListener() {
@@ -37,15 +37,7 @@ public class Signup extends AppCompatActivity {
                 final String username = etUsername.getText().toString();
                 final String email = etEmail.getText().toString();
                 final String password = etPassword.getText().toString();
-    //            final String rePassword = etRePassword.getText().toString();
-
-    /*            if (rePassword != password) {
-                    AlertDialog.Builder builder = new AlertDialog.Builder(Signup.this);
-                    builder.setMessage("Паролите не съвпадат")
-                            .setNegativeButton("Опитай пак", null)
-                            .create()
-                            .show();
-                }*/
+                final String rePassword = etRePassword.getText().toString();
 
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                         @Override
@@ -55,15 +47,25 @@ public class Signup extends AppCompatActivity {
                                 JSONObject jsonResponse = new JSONObject(response);
                                 boolean success = jsonResponse.getBoolean("success");
 
-                                if (success) {
-                                    Intent intent = new Intent(Signup.this, Login.class);
+                                if (success && (rePassword.equals(password))) {
+                                    Intent intent = new Intent(Signup.this, Home.class);
                                     Signup.this.startActivity(intent);
                                 } else {
-                                    AlertDialog.Builder builder = new AlertDialog.Builder(Signup.this);
-                                    builder.setMessage("Неуспешна регистрация")
-                                            .setNegativeButton("Опитай пак", null)
-                                            .create()
-                                            .show();
+                                    if (!success) {
+                                        AlertDialog.Builder builder = new AlertDialog.Builder(Signup.this);
+                                        builder.setMessage("Неуспешна регистрация")
+                                                .setNegativeButton("Опитай пак", null)
+                                                .create()
+                                                .show();
+                                    }
+
+                                    if (!rePassword.equals(password)) {
+                                        AlertDialog.Builder builder = new AlertDialog.Builder(Signup.this);
+                                        builder.setMessage("Паролите не съвпадат")
+                                                .setNegativeButton("Опитай пак", null)
+                                                .create()
+                                                .show();
+                                    }
                                 }
                             } catch (JSONException e) {
                                 e.printStackTrace();
@@ -74,15 +76,8 @@ public class Signup extends AppCompatActivity {
                 RegisterRequest registerRequest = new RegisterRequest(username, email, password, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(Signup.this);
                 queue.add(registerRequest);
-
-                Action_SignupToHome(view);
                 }
         });
-    }
-
-    public void Action_SignupToHome(View view) {
-        Intent intent = new Intent(getApplication(), Home.class);
-        startActivity(intent);
     }
 }
 
