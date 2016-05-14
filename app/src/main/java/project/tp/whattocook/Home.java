@@ -62,14 +62,14 @@ public class Home extends AppCompatActivity
     //@Override
     public void Action_Login (View view)
     {
-        Intent intent = new Intent(getApplicationContext(), Login.class);
-        startActivity(intent);
+        Intent intent = new Intent(Home.this, Login.class);
+        Home.this.startActivity(intent);
     }
 
     //@Override
     public void Action_Signup (View view)
     {
-        Intent intent = new Intent(getApplicationContext(), Signup.class);
-        startActivity(intent);
+        Intent intent = new Intent(Home.this, Signup.class);
+        Home.this.startActivity(intent);
     }
 }

@@ -47,13 +47,21 @@ public class Signup extends AppCompatActivity {
                                 JSONObject jsonResponse = new JSONObject(response);
                                 boolean success = jsonResponse.getBoolean("success");
 
-                                if (success && (rePassword.equals(password))) {
+                                if (success && (rePassword.equals(password)) && (!email.equals("")) && (!username.equals("")) && (!password.equals(""))) {
                                     Intent intent = new Intent(Signup.this, Home.class);
                                     Signup.this.startActivity(intent);
                                 } else {
                                     if (!success) {
                                         AlertDialog.Builder builder = new AlertDialog.Builder(Signup.this);
                                         builder.setMessage("Неуспешна регистрация")
+                                                .setNegativeButton("Опитай пак", null)
+                                                .create()
+                                                .show();
+                                    }
+
+                                    if ((rePassword.equals("")) || (email.equals("")) || (username.equals("")) || (password.equals(""))) {
+                                        AlertDialog.Builder builder = new AlertDialog.Builder(Signup.this);
+                                        builder.setMessage("Има празни полета")
                                                 .setNegativeButton("Опитай пак", null)
                                                 .create()
                                                 .show();
