@@ -45,14 +45,13 @@ public class Login extends AppCompatActivity
                             JSONObject jsonResponse = new JSONObject(response);
                             boolean success = jsonResponse.getBoolean("success");
 
-                            if (success) {
+                            if (success && (!username.equals("")) && (!password.equals(""))) {
                             //    String  = jsonResponse.getString("name");
 
                                 Intent intent = new Intent(Login.this, User.class);
                                 intent.putExtra("password", password);
                                 intent.putExtra("username", username);
                                 Login.this.startActivity(intent);
-                                /*Action_Forward(view);*/
                             } else {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(Login.this);
                                 builder.setMessage("Неуспешно влизане")
@@ -70,7 +69,6 @@ public class Login extends AppCompatActivity
                 LoginRequest loginRequest = new LoginRequest(username, password, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(Login.this);
                 queue.add(loginRequest);
-                Action_Forward(view);
             }
         });
 
@@ -81,13 +79,6 @@ public class Login extends AppCompatActivity
                 Action_LoginToForgottenPassword(view);
             }
         });
-    }
-
-    //@Override
-    public void Action_Forward (View view)
-    {
-        Intent intent = new Intent(getApplicationContext(), User.class);
-        startActivity(intent);
     }
 
     public void Action_LoginToForgottenPassword (View view)
