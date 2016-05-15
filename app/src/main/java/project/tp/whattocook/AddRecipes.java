@@ -68,13 +68,13 @@ public class AddRecipes extends AppCompatActivity {
                                             .show();
                                 }
 
-                                if ((preparation.equals("")) || (time.equals("")) || (title.equals("")) || (ingredients.equals(""))) {
+                                /*if ((preparation.equals("")) || (time.equals("")) || (title.equals("")) || (ingredients.equals(""))) {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(AddRecipes.this);
                                     builder.setMessage("Моля, попълнете всички полета")
                                             .setNegativeButton("Добре", null)
                                             .create()
                                             .show();
-                                }
+                                }*/
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
