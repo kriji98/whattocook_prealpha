@@ -37,17 +37,31 @@ public class AskRecipeOrIdea extends AppCompatActivity {
                 Action_AskRorItoROTD(view);
             }
         });
+
+        Button add = (Button) findViewById(R.id.askrecipeoridea_add_recipes_button);
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Action_AskRorItoAddR(view);
+            }
+        });
     }
 
     public void Action_AskRorItoSearch(View view)
     {
-        Intent intent = new Intent(getApplicationContext(), Search.class);
+        Intent intent = new Intent(getApplicationContext(), Search2.class);
         startActivity(intent);
     }
 
     public void Action_AskRorItoROTD(View view)
     {
         Intent intent = new Intent(getApplicationContext(), RecipeOfTheDay.class);
+        startActivity(intent);
+    }
+
+    public void Action_AskRorItoAddR(View view)
+    {
+        Intent intent = new Intent(getApplicationContext(), AddRecipes.class);
         startActivity(intent);
     }
 }

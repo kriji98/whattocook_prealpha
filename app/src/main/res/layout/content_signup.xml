@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Потребителско име"
+        android:text="Потребителско име (на латиница)"
         android:id="@+id/username"
         android:textColor="#ede1e1"/>
     <!--android:background="#cdff91"-->
