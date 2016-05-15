@@ -1,37 +1,163 @@
 <!DOCTYPE html>
 <html>
+<html lang="en">
 	<head>
 		<title>What to cook</title>
 		<link rel="stylesheet" href="../css/what to cook.css"/>
 		<link rel="shortcut icon" href="../images/logo.png" />
-	</head>
-		
-	<body>
-		<center>
-			<h1><i>What to cook</i></h1>
+		<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 70%;
+    margin-top: 50px;
+    margin-left: 0px;
 
-			<button class="Button" id="Button-24" type="button">  
+  }
+  </style>
+	</head>
+	<body>
+	
+<div id="container">
+    <header>
+        <nav itemscope="itemscope" id="menu-primary">
+            <div id="menu-toggle-primary">
+			<center><img src="../images/logo_whatToCook.png" alt="what to cook" width="300" height="150"></center>
+                <a class="mobile-nav-open" href="#menu-primary">
+                    <svg x="0px" y="0px" width="35px" height="25px" viewBox="0 0 35 25" enable-background="new 0 0 35 25" xml:space="preserve">
+                        <defs></defs>
+                        <line id="topLine" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="2.5" y1="2.5" x2="32.5" y2="2.5"></line>
+                        <line id="middleLine" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="2.5" y1="12.5" x2="32.5" y2="12.5"></line>
+                        <line id="bottomLine" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="2.5" y1="22.5" x2="32.5" y2="22.5"></line>
+                    </svg>
+                </a>
+                <a class="mobile-nav-close" href="#">
+                    <svg x="0px" y="0px" width="35px" height="25px" viewBox="0 0 35 25" enable-background="new 0 0 35 25" xml:space="preserve">
+                        <defs></defs>
+                        <line id="topLine" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="7.5" y1="2.5" x2="27.5" y2="22.5" class="topLineActive"></line>                     
+                        <line id="bottomLine" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="7.5" y1="22.5" x2="27.5" y2="2.5" class="bottomLineActive"></line>
+                    </svg>
+                </a>
+                <ul id="navigation">
+                    <li>home</li>
+                    <li>about</li>
+                    <li>blog</li>
+                    <li>gallery</li>
+                    <li>contact</li>
+					<li><button class="Button" id="Button-24" type="button">  
 				<a href = "../html/registration.html">  
 				<span class="buttonText">Sign up</span>
-        	</button>
-
-			<button class="Button" id="Button-24" type="button">
+        	</button></li>
+					<li><button class="Button" id="Button-24" type="button">
 				<a href = "../html/log in.html">    
 				<span class="buttonText">Log in</span>
-        	</button>
-			
+        	</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>	
+			<center>
 			<div class="lighter">
 <form>
 	<span><input type="text" class="search rounded" placeholder="Search..."></span>
 	<input type="button" value="Search">
 </form>
-</div>
+</div> 
 
-			<!-- 
-			<Form action="#">
-				<p>Search: <input type="search" name="keyword" size="50"></p>
-			</form> 
-			!-->
+
+	<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="../images/slide.jpg" alt="fruits in bottle" width="200" height="300">
+      </div>
+
+      <div class="item">
+        <img src="../images/food.jpg" alt="fruits" width="200" height="300">
+      </div>
+    
+      <div class="item">
+        <img src="../images/pizza.jpg" alt="pizza" width="200" height="300">
+      </div>
+
+      <div class="item">
+        <img src="../images/dessert.jpg" alt="cupcake" width="200" height="300">
+      </div>
+    </div>
+	
+		<ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol> 
+
 		</center>
+		
+		  <main>
+        <div id="left">
+            <section>
+                <article>
+                    <h1>Добре дошъл</h1>
+                    <div><span class="bold">Lorem ipsun dolor s it amet, consectetur adipiscing eli. Quisque eros nisl, volutpat vel a ugue pellentesque, consectetur molisis erat.</span>Quisque dapibus eget massa vitae porta. Cum sociis notaque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam vulputate est eget ornare convallis. Aenean faucibus rhoncus est sit amet feugiat. Donec vulputate gravida tempor. Morbi facilisis consequat justo in fermentum. Sed convallis porttitor lectus, eleifend adipiscing libero tincidunt non. Nunc nec varius enim, nec egestas nulla. In facilisis tellus ac malesuada imperdiet. Nulla nec metus ut sapien feugiat tristique ac ut mauris.</div>
+                </article>
+            </section>
+            <section>
+                <h1 id="capitalized">Няколко добре познати рецепти</h1>
+                <article>                    
+                    <div class="image"><img src="../images/00005.jpg"></div>
+                    <div class="text">
+                        <p class="bold"><a href="">Торта</a></p>
+                        <span>Lorem ipsun dolor s it amet, consectetur adipiscing eli. Quisque eros nisl, volutpat vel a ugue pellentesque, consectetur molisis erat. Quisque dapibus eget massa vitae porta. Cum sociis notaque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam vulputate est eget ornare convallis. </span>
+                    </div>              
+                </article>
+                <hr />
+                <article>
+                    <div class="image"><img src="../images/00004.jpg"></div>
+                    <div class="text">
+                        <p class="bold"><a href="">Пица</a></p>
+                        <span>Lorem ipsun dolor s it amet, consectetur adipiscing eli. Quisque eros nisl, volutpat vel a ugue pellentesque, consectetur molisis erat. Quisque dapibus eget massa vitae porta. Cum sociis notaque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam vulputate est eget ornare convallis. </span>
+                    </div>   
+                </article>
+                <hr/>
+                <article>
+                    <div class="image"><img src="../images/00003.jpg"></div>
+                    <div class="text">
+                        <p class="bold"><a href="">Супа</a></p>
+                        <span>Lorem ipsun dolor s it amet, consectetur adipiscing eli. Quisque eros nisl, volutpat vel a ugue pellentesque, consectetur molisis erat. Quisque dapibus eget massa vitae porta. Cum sociis notaque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam vulputate est eget ornare convallis. </span>
+                    </div>   
+                </article>
+            </section>
+        </div>
+    </main>
+	
+	<article id="video">
+						<figure>
+							<h2>Вижте приложението ни</h2>
+							<video controls width="535" height="305">
+								<source src="http://www.w3schools.com/HTML/mov_bbb.mp4" type="video/mp4">
+								<source src="http://www.w3schools.com/HTML/mov_bbb.ogg" type="video/ogg">
+									Your browser does not support HTML5 video.
+							</video>
+						</figure>
+					</article>
+	
+	  <footer>
+        <div>
+            <ul>
+                <li>Whta to cook &copy; 13 August 2016</li>
+            </ul>
+        </div>
+    </footer>
+</div>
+		
 	</body>
 </html>
