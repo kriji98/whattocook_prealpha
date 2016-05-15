@@ -8,6 +8,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
@@ -53,7 +55,8 @@ public class AddRecipes extends AppCompatActivity {
                             JSONObject jsonResponse = new JSONObject(response);
                             boolean success = jsonResponse.getBoolean("success");
 
-                            if (success && ((!time.equals("")) && (!title.equals("")) && (!ingredients.equals("")))) {
+                            if (success && ((!time.equals("")) && (!title.equals("")) && (!ingredients.equals("")) && (!time.equals("")) && (!preparation.equals("")))) {
+                                Toast.makeText(AddRecipes.this, "Качването е успешно!", Toast.LENGTH_LONG).show();
                                 Intent intent = new Intent(AddRecipes.this, AskRecipeOrIdea.class);
                                 AddRecipes.this.startActivity(intent);
                             } else {
@@ -65,9 +68,9 @@ public class AddRecipes extends AppCompatActivity {
                                             .show();
                                 }
 
-                                if ((preparation.equals("")) || (time.equals("")) || (title.equals("")) || (ingredients.equals(""))) {
+                                if ((preparation.equals("")) || (time.equals("")) || (title.equals("")) || (ingredients.equals("") || (time.equals("")) || (preparation.equals("")))) {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(AddRecipes.this);
-                                    builder.setMessage("Моля, попълнете празните полета")
+                                    builder.setMessage("Моля, попълнете всички полета")
                                             .setNegativeButton("Добре", null)
                                             .create()
                                             .show();

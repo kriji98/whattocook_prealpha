@@ -9,6 +9,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
@@ -48,6 +50,7 @@ public class Signup extends AppCompatActivity {
                                 boolean success = jsonResponse.getBoolean("success");
 
                                 if (success && (rePassword.equals(password)) && (!email.equals("")) && (!username.equals("")) && (!password.equals(""))) {
+                                    Toast.makeText(Signup.this, "Регистрацията е успешна!", Toast.LENGTH_LONG).show();
                                     Intent intent = new Intent(Signup.this, Home.class);
                                     Signup.this.startActivity(intent);
                                 } else {
