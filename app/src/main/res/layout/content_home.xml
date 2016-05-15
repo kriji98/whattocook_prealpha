@@ -68,7 +68,7 @@
                 android:textColor="#F7F7F7"
                 android:layout_gravity="right"
                 android:textStyle="normal|italic"
-                android:layout_column="42" />
+                android:layout_column="43" />
 
         </TableRow>
 
