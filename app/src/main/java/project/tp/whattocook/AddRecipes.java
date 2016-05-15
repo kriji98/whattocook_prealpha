@@ -55,7 +55,7 @@ public class AddRecipes extends AppCompatActivity {
                             JSONObject jsonResponse = new JSONObject(response);
                             boolean success = jsonResponse.getBoolean("success");
 
-                            if (success && ((!time.equals("")) && (!title.equals("")) && (!ingredients.equals("")) && (!time.equals("")) && (!preparation.equals("")))) {
+                            if (success && !time.equals("") && !title.equals("") && !ingredients.equals("") && !time.equals("") && !preparation.equals("")) {
                                 Toast.makeText(AddRecipes.this, "Качването е успешно!", Toast.LENGTH_LONG).show();
                                 Intent intent = new Intent(AddRecipes.this, AskRecipeOrIdea.class);
                                 AddRecipes.this.startActivity(intent);
@@ -68,7 +68,7 @@ public class AddRecipes extends AppCompatActivity {
                                             .show();
                                 }
 
-                                if ((preparation.equals("")) || (time.equals("")) || (title.equals("")) || (ingredients.equals("") || (time.equals("")) || (preparation.equals("")))) {
+                                if ((preparation.equals("")) || (time.equals("")) || (title.equals("")) || (ingredients.equals(""))) {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(AddRecipes.this);
                                     builder.setMessage("Моля, попълнете всички полета")
                                             .setNegativeButton("Добре", null)
