@@ -90,7 +90,9 @@
         <activity android:name=".RecipesList" />
         <activity android:name=".AddRecipes" />
         <activity android:name=".User" />
-        <activity android:name=".PopularRecipe"></activity>
+        <activity android:name=".PopularRecipe" />
+        <activity android:name=".Search2" />
+        <activity android:name=".Results"></activity>
     </application>
 
 </manifest>
