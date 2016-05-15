@@ -64,8 +64,8 @@ public class Signup extends AppCompatActivity {
 
                                     if ((rePassword.equals("")) || (email.equals("")) || (username.equals("")) || (password.equals(""))) {
                                         AlertDialog.Builder builder = new AlertDialog.Builder(Signup.this);
-                                        builder.setMessage("Има празни полета")
-                                                .setNegativeButton("Опитай пак", null)
+                                        builder.setMessage("Моля, попълнете всички полета")
+                                                .setNegativeButton("Добре", null)
                                                 .create()
                                                 .show();
                                     }
