@@ -63,7 +63,7 @@ body, header, nav, main, aside, footer, a, h1,  ul, li, section, img, span, .ima
 
 #container {
     width: 100%; 
-    max-width: 900px;
+    max-width: 1150px;
     margin: 0 auto;
     background: #fff;
     overflow: hidden;
